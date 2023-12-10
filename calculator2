@@ -1,0 +1,73 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int hitung, a, b;
+    float bil1,bil2,tambah, kurang, kali, bagi;
+
+    printf("Kalkulator Sederhana \n");
+    printf("1.Penjumlahan (+) \n");
+    printf("2.Pengurangan (-) \n");
+    printf("3.Perkalian   (x) \n");
+    printf("4.Pembagian   (/) \n");
+    printf("Pilih Operasi Hitung : ");
+    scanf ("%d", &hitung);
+
+    if (hitung ==1)
+    {
+      printf("Penjumlahan \n");
+      printf("bilangan pertama = ");
+      scanf ("%f", &bil1);
+      printf ("bilangan kedua = ");
+      scanf ("%f", &bil2);
+
+      tambah = bil1 + bil2;
+      printf ("Hasil penjumlahan = %2.f", tambah);
+    }
+
+
+    else if (hitung ==2)
+    {
+      printf("Pengurangan \n");
+      printf("bilangan pertama = ");
+      scanf ("%f", &bil1);
+      printf ("bilangan kedua = ");
+      scanf ("%f", &bil2);
+
+      kurang = bil1 - bil2;
+      printf ("Hasil penjumlahan = %2.f", kurang);
+    }
+
+
+    else if (hitung ==3)
+    {
+      printf("Perkalian \n");
+      printf("bilangan pertama = ");
+      scanf ("%f", &bil1);
+      printf ("bilangan kedua = ");
+      scanf ("%f", &bil2);
+
+      kali = bil1 * bil2;
+      printf ("Hasil penjumlahan = %2.f", kali);
+    }
+
+    else if (hitung ==4)
+    {
+      printf("Pembagian \n");
+      printf("bilangan pertama = ");
+      scanf ("%f", &bil1);
+      printf ("bilangan kedua = ");
+      scanf ("%f", &bil2);
+
+      bagi = bil1 / bil2;
+      printf ("Hasil penjumlahan = %2.f", bagi);
+    }
+
+    else
+    {
+      printf ("Input menu salah");
+    }
+
+    return 0;
+}
